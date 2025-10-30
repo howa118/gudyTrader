@@ -70,8 +70,8 @@ public class GOrderBucketImpl implements IOrderBucket {
     @Override
     public long match(long volumeLeft, RbCmd triggerCmd, Consumer<Order> removeOrderCallback) {
         // S 46 --> 5 10 24
-        // S 45 --> 11 20 10 20
-        // B 45 100
+        // S卖 45 --> 11 20 10 20
+        // B买 45 100
 
         Iterator<Map.Entry<Long, Order>> iterator = entries.entrySet().iterator();
 
